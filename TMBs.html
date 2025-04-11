@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de TMB</title>
+  <link rel="stylesheet" href="css/tmbs.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button onclick="mostrarFormulario('adulto')">Adultos</button>
+      <button onclick="mostrarFormulario('crianca')">Crianças</button>
+    </div><br><br>
+
+    <h1>Calculadora de TMB</h1><br>
+
+    <!-- Formulário Adulto -->
+    <div id="form-adulto" class="formulario ativo">
+      <center>
+          <h2>Adultos</h2>
+      </center>
+      <input type="number" id="idadeAdulto" placeholder="Idade (anos)">
+      <select id="sexoAdulto">
+        <option value="">Sexo</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+      <input type="number" id="pesoAdulto" placeholder="Peso (kg)">
+      <input type="number" id="alturaAdulto" placeholder="Altura (cm)">
+      <button onclick="calcularTMBAdulto()">Calcular TMB</button>
+      <div id="resultadoAdulto" class="resultado"></div>
+    </div>
+
+    <!-- Formulário Criança -->
+    <div id="form-crianca" class="formulario">
+      <center>
+          <h2>Crianças</h2>
+      </center>
+      <input type="number" id="idadeCrianca" placeholder="Idade (anos)">
+      <select id="sexoCrianca">
+        <option value="">Sexo</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+      <input type="number" id="pesoCrianca" placeholder="Peso (kg)">
+      <button onclick="calcularTMBCrianca()">Calcular TMB</button>
+      <div id="resultadoCrianca" class="resultado"></div>
+    </div>
+  </div>
+
+  <script src="js/nutri.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de IMC Infantil</title>
+  <link rel="stylesheet" href="css/stylecriançaimc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IMC Infantil</h1>
+
+    <div class="form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Nome da criança" required>
+
+      <label for="idade">Idade (anos):</label>
+      <input type="number" id="idade" min="1" max="19" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" step="0.1" required>
+
+      <label for="altura">Altura (m):</label>
+      <input type="number" id="altura" step="0.01" required>
+
+      <button onclick="calcularIMC()">Calcular</button>
+    </div>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="js/nutri.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Interativo</title>
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container"><br>
+        <!-- FAQ -->
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2><br>
+
+            <details class="faq-item">
+                <summary class="faq-question">Qual é o seu diferencial em relação aos concorrentes?</summary>
+                <p class="faq-answer">O diferencial é nossa massa amanteigada artesanal que não tem em nenhum outro lugar.</p>
+            </details><br>
+
+            <details class="faq-item">
+                <summary class="faq-question">Quem é o seu público-alvo (idade, sexo, localização, interesses, etc.)?</summary>
+                <p class="faq-answer">Todos os públicos, com exceção de celíacos (massa de farinha de trigo) e intolerantes a lactose (todas as opções contém queijo).</p>
+            </details><br>
+
+            <details class="faq-item">
+                <summary class="faq-question">Quais os meios de pagamento aceitos?</summary>
+                <p class="faq-answer">Aceitamos cartões de crédito, débito, PIX e boleto bancário.</p>
+            </details>
+        </section>
+    </div><br><br><br><br><br><br>
+
+    <h1>Opiniões dos nossos clientes!</h1>
+    
+    <section class="opinions">
+        <div class="opinion-box">
+            <h3 class="client-name">Maria Silva</h3><br>
+            <img src="img/mulher 1.jpg" alt="Foto do cliente 1" class="profile-img"><br>
+            <div class="opinion-content">
+                <h3 class="opinion">"O serviço foi excelente, super recomendo!"</h3><br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="opinion-box">
+            <h3 class="client-name">João Oliveira</h3><br>
+            <img src="img/homem.jpg" alt="Foto do cliente 2" class="profile-img"><br>
+            <div class="opinion-content">
+                <h3 class="opinion">"Atendimento rápido e eficiente. Amei a experiência!"</h3><br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="opinion-box">
+            <h3 class="client-name">Ana Costa</h3><br>
+            <img src="img/mulher 2.jpg" alt="Foto do cliente 3" class="profile-img"><br>
+            <div class="opinion-content">
+                <h3 class="opinion">"Muito bom, a equipe é super dedicada e atenciosa. Com certeza voltarei!"</h3><br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="opinion-box">
+            <h3 class="client-name">Antonio Marques</h3><br>
+            <img src="img/homem 2.jfif" alt="Foto do cliente 3" class="profile-img"><br>
+            <div class="opinion-content">
+                <h3 class="opinion">"Eu adorei! A comida é ótima e o atendimento é excelente!"</h3><br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br><br><br><br><br><br>
+    
+    <!-- Formulário de opinião -->
+    <h1>Deixe sua opinião!</h1><br>
+    <form class="opinion-form">
+        <textarea name="opinion" rows="4" placeholder="Compartilhe sua opinião..." required></textarea><br>
+        
+        <div class="stars-rating">
+            <label for="stars"><h2>Avalie com estrelas:</h2></label>
+            <div class="star-rating">
+                <input type="radio" name="stars" id="star5" value="5"><label for="star5">&#9733;</label>
+                <input type="radio" name="stars" id="star4" value="4"><label for="star4">&#9733;</label>
+                <input type="radio" name="stars" id="star3" value="3"><label for="star3">&#9733;</label>
+                <input type="radio" name="stars" id="star2" value="2"><label for="star2">&#9733;</label>
+                <input type="radio" name="stars" id="star1" value="1"><label for="star1">&#9733;</label>
+            </div>
+        </div>
+        
+        <button type="submit">Enviar opinião</button>
+    </form>
+</div>
+
+</body>
+</html>

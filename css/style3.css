@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6E1217;
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px;
+    margin: 20px;
+    max-width: 900px;
+    box-shadow: 8px 8px 20px rgb(36, 36, 36);
+    border-radius: 16px;
+}
+
+.text h3 {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.text p {
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+    text-align: justify;
+}
+
+.text p:hover {
+    transform: scale(1.02);
+    color: #6E1217;
+}
+
+.box-image {
+    display: block;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px black;
+}
+
+.box-image2 {
+    display: block;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px black;
+}
+
+.faq-item {
+    margin-top: 20px;
+}
+
+.faq-question {
+    width: 50%;
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #fa6305, #a7d511);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question2 {
+    width: 95%;
+    padding: 15px 20px;
+    background: linear-gradient(45deg, #fa6305, #a7d511);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #E99920;
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #fa6305;
+    border-radius: 20px;
+    color: #222;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+}
+
+details[open] .faq-answer {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 4px solid #fa6305;
+}

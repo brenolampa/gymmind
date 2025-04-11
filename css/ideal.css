@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    background-image: url('fundo1.png');
+    background-size: cover;        /* cobre toda a tela */
+    background-position: center;   /* centraliza a imagem */
+    background-repeat: no-repeat;  /* evita repetição */
+  }
+  
+  .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #273c75;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .toggle-buttons button {
+    background:linear-gradient(-45deg,#ffeaf9, #fdde9f, #ffc758, #f4f45d)no-repeat;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-buttons button:hover {
+    background-color: #7f8fa6;
+    color: #fff;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .formulario label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+  
+  .formulario input,
+  .formulario select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .formulario button {
+    background:linear-gradient(-45deg, #fdde9f, #ffc758, #f4f45d)no-repeat;
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formulario button:hover {
+    background:linear-gradient(-45deg, #fdde9f, #ffc758, #f4f45d)no-repeat;
+    color: white;
+  }
+  
+  #resultadoPI {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #192a56;
+    margin-top: 10px;
+  }
+  

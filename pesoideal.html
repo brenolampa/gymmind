@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Peso Ideal</title>
+  <link rel="stylesheet" href="css/ideal.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Peso Ideal</h1>
+
+    <div class="toggle-buttons">
+      <button onclick="mostrarFormulario('adulto')">Adulto</button>
+      <button onclick="mostrarFormulario('crianca')">Criança</button>
+    </div>
+
+    <!-- Formulário Adulto -->
+    <form id="form-adulto" class="formulario" style="display: none;" onsubmit="calcularPesoIdealAdulto(event)">
+      <label>
+        Altura (cm):
+        <input type="number" id="alturaAdulto" step="0.1" required />
+      </label>
+      <label>
+        Sexo:
+        <select id="sexoAdulto" required>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+      </label><br>
+      <center><button type="submit">Calcular</button></center>
+    </form>
+
+    <!-- Formulário Criança -->
+    <form id="form-crianca" class="formulario" style="display: none;" onsubmit="calcularPesoIdealCrianca(event)">
+      <label>
+        Idade (anos):
+        <input type="number" id="idadeCrianca" step="0.1" required />
+      </label>
+      <label>
+        Altura (cm):
+        <input type="number" id="alturaCrianca" step="0.1" required />
+      </label><br>
+      <center><button type="submit">Calcular</button></center>
+    </form>
+
+    <div id="resultadoPI"></div>
+  </div>
+
+  <script src="js/nutri.js"></script>
+</body>
+</html>
